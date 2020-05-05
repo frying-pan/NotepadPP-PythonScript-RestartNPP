@@ -19,6 +19,12 @@ Warnings :
   * 'Preferences' changed during this session will NOT be remembered after the restart
   * window position, and recent files list changed during this session will NOT be remembered after the restart
   * undo/redo history will NOT be remembered after the restart
+  
+# Why ?
+
+* If you are writing and running a Python script 'MyScript.py' from Notepad++, and this script has an 'Import MyLib.py', and you have edited and saved 'MyLib.py'. The changes made in 'MyLib.py' will not be taken into account until you restart Notepad++ (probably because the Import(s) are cached)
+* If you have set a hook or a callback via a Python script, you may be unable to remove it without restarting Notepad++
+* Probably other reasons...
 
 # Install :
 
@@ -28,9 +34,9 @@ This script can be set as a restart button in the toolbar (folder below is for a
 
 C:\Users\[username]\AppData\Roaming\Notepad++\plugins\config\PythonScript\scripts
 
-In Menu > Plugins > PythonScript > Configuration : with 'User Scripts' > add this script as 'Toolbar icons'
+* In Menu > Plugins > PythonScript > Configuration : with 'User Scripts' > add this script as 'Toolbar icons'
 
-(you can choose an icon : which, for me, required to be a .bmp file, 16x16 being better, ico files did not work)
+(you can choose an icon : which, for me, required to be a .bmp file, 16x16 being better, .ico files did not work)
 
 Possibly restart Notepad++ to have the script icon appear on the toolbar
 
