@@ -16,8 +16,6 @@ Features :
   
 Warnings :
   * modified workspaces must be manually saved before restarting, otherwise the previous Notepad++ instance will not close
-  * 'Preferences' changed during this session will NOT be remembered after the restart
-  * window position, and recent files list changed during this session will NOT be remembered after the restart
   * undo/redo history will NOT be remembered after the restart
   
 # Why ?
@@ -30,7 +28,7 @@ Warnings :
 
 This script can be set as a restart button in the toolbar (folder below is for a local installation) : 
 
-* copy the main Perso_RestartNPP .py script file (and the needed library file) in :
+* copy the main Perso_RestartNPP .py script file (and the needed library file, and starting from v2_0 the VBS file) in :
 
 C:\Users\[username]\AppData\Roaming\Notepad++\plugins\config\PythonScript\scripts
 
@@ -43,3 +41,13 @@ Possibly restart Notepad++ to have the script icon appear on the toolbar
 # Versions :
 
 Perso_RestartNPP_v1_0.py, (requires Perso__Lib_Window.py included in the same folder)
+
+Warnings : for v1_0 only, this has been solved in version v2_0
+  * 'Preferences' changed during this session will NOT be remembered after the restart
+  * window position, and recent files list changed during this session will NOT be remembered after the restart
+
+Perso_RestartNPP_v2_0.py, (requires Perso__Lib_Window.py and Perso_RestartNPP.vbs included in the same folder)
+changes :
+  * now remembers 'Preferences', window position, recent files list and other configuration settings across restart
+  * uses a VBS script to wait for the previous instance to have closed, before starting the new instance
+  * safer and easier handling of the restart operation
