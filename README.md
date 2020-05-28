@@ -1,4 +1,4 @@
-# NotepadPP-PythonScript-RestartNPP
+# Restart_NotepadPP
 
 Allow restarting Notepad++, preserving the current session state (with PythonScript plugin installed)
 
