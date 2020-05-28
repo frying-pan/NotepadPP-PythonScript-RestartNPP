@@ -2,7 +2,7 @@
 
 Allow restarting Notepad++, preserving the current session state (with PythonScript plugin installed)
 
-Read carefully the warnings at the beginning of the main script file, and in the dialog when executing the script
+Read the warnings at the beginning of the main script file, and in the dialog when executing the script
 
 
 Tested with Notepad++ 7.8.2 64 bits, with PythonScript plugin 1.5.2,
@@ -22,7 +22,7 @@ Warnings :
 
 * If you are writing and running a Python script 'MyScript.py' from Notepad++, and this script has an 'Import MyLib.py', and you have edited and saved 'MyLib.py'. The changes made in 'MyLib.py' will not be taken into account until you restart Notepad++ (probably because the Import(s) are cached)
 * If you have set a hook or a callback via a Python script, you may be unable to remove it without restarting Notepad++
-* Probably other reasons...
+* Possibly other reasons...
 
 # Install :
 
@@ -46,13 +46,13 @@ Warnings : for v1_0 only, this has been solved in version v2_0
 * 'Preferences' changed during this session will NOT be remembered after the restart
 * window position, and recent files list changed during this session will NOT be remembered after the restart
 
-FP_RestartNPP_v2_0.py, (requires FP__Lib_Window.py and FP_RestartNPP.vbs included in the same folder)
+FP_RestartNPP_v2_0.py (requires FP__Lib_Window.py and FP_RestartNPP.vbs included in the same folder)
 changes :
 * now remembers 'Preferences', window position, recent files list and other configuration settings across restart
 * uses a VBS script to wait for the previous instance to have closed, before starting the new instance
 * safer and easier handling of the restart operation
 
-FP_RestartNPP_v2_1.py
+FP_RestartNPP_v2_1.py (requires FP__Lib_Window.py and FP_RestartNPP.vbs included in the same folder)
 changes :
 * script name changed from Perso_RestartNPP to FP_RestartNPP for easier identification
 * minor update
