@@ -40,19 +40,20 @@ Possibly restart Notepad++ to have the script icon appear on the toolbar
 
 # Versions :
 
-FP_RestartNPP_v1_0.py, (requires FP__Lib_Window.py included in the same folder)
+FP_RestartNPP_v1_0.py
+* requires the library FP__Lib_Window.py included in the same folder
+* 2 Warnings below : for version v1_0 only, this has been solved in version v2_0
+* Warnings : 'Preferences' changed during this session will NOT be remembered after the restart
+* Warnings : window position, and recent files list changed during this session will NOT be remembered after the restart
 
-Warnings : for v1_0 only, this has been solved in version v2_0
-* 'Preferences' changed during this session will NOT be remembered after the restart
-* window position, and recent files list changed during this session will NOT be remembered after the restart
-
-FP_RestartNPP_v2_0.py (requires FP__Lib_Window.py and FP_RestartNPP.vbs included in the same folder)
+FP_RestartNPP_v2_0.py
 changes :
+* now requires the VBS file : FP_RestartNPP.vbs included in the same folder
 * now remembers 'Preferences', window position, recent files list and other configuration settings across restart
 * uses a VBS script to wait for the previous instance to have closed, before starting the new instance
 * safer and easier handling of the restart operation
 
-FP_RestartNPP_v2_1.py (requires FP__Lib_Window.py and FP_RestartNPP.vbs included in the same folder)
+FP_RestartNPP_v2_1.py
 changes :
 * script name changed from Perso_RestartNPP to FP_RestartNPP for easier identification
 * minor update
