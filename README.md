@@ -1,14 +1,12 @@
-# Restart_NotepadPP
+# RestartNPP
 
 Allow restarting Notepad++, and restore the current session state (with PythonScript plugin installed)
 
 Read the warnings in the confirmation dialog when executing the script
 
+Tested with Notepad++ 7.8.2 64 bits, on Windows 8.1 64 bits (NOT tested with Notepad++ 32 Bits but should be compatible)
 
-Tested with Notepad++ 7.8.2 64 bits, with PythonScript plugin 1.5.2,
-
-on Windows 8.1 64 bits (NOT tested with Notepad++ 32 Bits but should be compatible)
-
+using PythonScript plugin 1.5.2 from https://github.com/bruderstein/PythonScript/releases/ (based on python 2.7).
 
 Features :
   * auto-save, or ask where to save new files, before restarting Notepad++
