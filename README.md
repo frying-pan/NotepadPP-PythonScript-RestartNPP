@@ -56,3 +56,7 @@ FP_RestartNPP_v2_1.py
 changes :
   * script name changed from Perso_RestartNPP to FP_RestartNPP for easier identification
   * minor update
+
+FP_RestartNPP_v2_2.py
+changes :
+  * debugged and hardened editors window detection
